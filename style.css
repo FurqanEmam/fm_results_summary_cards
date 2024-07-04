@@ -1,0 +1,149 @@
+@font-face {
+  font-family: "myCustomFont";
+  src: url("/assets/fonts/HankenGrotesk-VariableFont_wght.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "myCustomFont", sans-serif;
+}
+
+.card-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.blue-box {
+  width: 380px;
+  background: linear-gradient(
+    180deg,
+    rgb(60, 56, 134) 0%,
+    rgba(50, 12, 216, 0.753) 0%,
+    rgba(21, 18, 168, 0.767) 100%
+  );
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  padding: 20px;
+  border-radius: 25px;
+}
+.round-box {
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  border-radius: 50%;
+  background: linear-gradient(
+    180deg,
+    rgb(51, 46, 158) 0%,
+    rgb(102, 59, 255) 0%,
+    rgba(80, 79, 155, 0.781) 100%
+  );
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  margin-bottom: 25px;
+}
+.container-title {
+  margin-top: 10px;
+  margin-bottom: 25px;
+  font-size: 20px;
+  color: rgb(179, 178, 177);
+}
+.result-number {
+  font-size: 45px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  margin-top: 22px;
+}
+.total-number {
+  color: rgb(143, 143, 143);
+  margin-bottom: 35px;
+}
+h4 {
+  margin-top: 15px;
+  font-size: 25px;
+}
+.details-texts {
+  padding: 35px;
+  text-justify: auto;
+  line-height: 25px;
+  word-spacing: 5px;
+  text-align: center;
+}
+
+.table-data {
+  background-color: rgb(255, 255, 214);
+  margin-bottom: 5px;
+  display: flex;
+  gap: 60px;
+  padding: 10px;
+  width: 300px;
+  justify-content: space-between;
+}
+
+.reaction {
+  color: rgba(245, 20, 20, 0.877);
+  font-size: 20px;
+}
+.memory {
+  color: rgba(153, 151, 17, 0.603);
+  font-size: 20px;
+}
+.verbal {
+  color: palegreen;
+  font-size: 20px;
+}
+.visual {
+  color: blue;
+  font-size: 20px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 25px;
+  background: linear-gradient(
+    180deg,
+    rgb(60, 56, 134) 0%,
+    rgba(88, 54, 241, 0.753) 0%,
+    rgba(2, 0, 90, 0.767) 100%
+  );
+  color: white;
+  font-size: 20px;
+  margin-top: 25px;
+}
+button:hover {
+  background: linear-gradient(
+    180deg,
+    rgb(60, 56, 134) 0%,
+    rgba(96, 65, 236, 0.753) 0%,
+    rgba(6, 3, 145, 0.767) 100%
+  );
+  color: rgb(231, 220, 220);
+}
+
+.text-box-header {
+  margin-bottom: 35px;
+}
+
+@media (max-width: 600px) {
+  .card-container {
+    flex-direction: column;
+    max-width: 800px;
+    margin: 20px auto;
+  }
+
+  .blue-box,
+  .text-box {
+    flex: 1;
+    margin: 10px;
+  }
+}
