@@ -5,10 +5,22 @@
   font-style: normal;
 }
 
-* {
+/* * {
   box-sizing: border-box;
   margin: 0;
   font-family: "myCustomFont", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+} */
+body {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 .card-container {
@@ -20,7 +32,7 @@
 }
 
 .blue-box {
-  width: 380px;
+  max-width: 380px;
   background: linear-gradient(
     180deg,
     rgb(60, 56, 134) 0%,
@@ -52,8 +64,8 @@
   margin-bottom: 25px;
 }
 .container-title {
-  margin-top: 10px;
-  margin-bottom: 25px;
+  /* margin-top: 10px;
+  margin-bottom: 25px; */
   font-size: 20px;
   color: rgb(179, 178, 177);
 }
@@ -72,10 +84,10 @@ h4 {
   font-size: 25px;
 }
 .details-texts {
-  padding: 35px;
+  padding: 15px;
   text-justify: auto;
-  line-height: 25px;
-  word-spacing: 5px;
+  /* line-height: 25px;
+  word-spacing: 5px; */
   text-align: center;
 }
 
